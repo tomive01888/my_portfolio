@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-brand">Tom Andre Iversen</div>
+        <ul class="nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#work">my work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="max-container">
+        <h1>Tom Andre Iversen</h1>
+        <p class="job">
+          Frontend-developer
+          <span id="loading">
+            <span id="progress-text"></span>
+          </span>
+        </p>
+
+        <section class="yellow-underline-container">
+          <div class="yellow-underline"></div>
+          <div class="yellow-underline"></div>
+          <div class="yellow-underline"></div>
+          <div class="yellow-underline"><p>gamer</p></div>
+          <div class="yellow-underline"><p>weird person</p></div>
+          <div class="yellow-underline"><p>frog lover</p></div>
+        </section>
+      </section>
+
+      <aside id="down" class="arrow-bob">
+        <img src="./assets/red-arrow.png" alt="red arrow" />
+      </aside>
+    </main>
+
+    <div class="mywork-container">
+      <div class="overlay-effect"></div>
+      <section id="work" class="max-container">
+        <h2>My work</h2>
+
+        <div id="website-container">
+          <img class="imac-window" src="./assets/iMac.png" alt="" />
+
+          <div class="button-container">
+            <button type="button" id="prev"><img src="./assets/red-arrow.png" alt="red arrow" /></button>
+            <button type="button" id="next"><img src="./assets/red-arrow.png" alt="red arrow" /></button>
+          </div>
+
+          <div id="website-image"></div>
+
+          <div class="website-info-wrapper">
+            <h3 class="website-name">title</h3>
+            <p class="website-visit">
+              <img src="./assets/linking.png" alt="linking icon" />
+              <a class="website-link" href="" target="_blank">here</a>
+            </p>
+            <p class="website-description">description</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="about-container">
+      <div id="about" class="max-container">
+        <div class="me">
+          <h3>about me :</h3>
+          <p>Hello there, I am a student at Noroff, currently taking class in Frontend-developer.</p>
+          <p>
+            Next to my studies I work at the airport in Oslo, Gardermoen in catering firm called Gate Gourmet as partime
+            warehouse worker. Ranging from roomtemperature to ice cold environments all the way down to -30 degrees.
+          </p>
+        </div>
+
+        <div class="skills">
+          <h4>My skillset :</h4>
+          <ul>
+            <li>
+              <span class="skill-side">|</span> Javascript <span class="skill-level">Level: Low-intermediate</span>
+            </li>
+            <li><span class="skill-side">|</span> CSS <span class="skill-level">Level: Intermediate</span></li>
+            <li><span class="skill-side">|</span> HTML <span class="skill-level">Level: Intermediate</span></li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <a href="https://www.linkedin.com" target="_null"> linkedin </a>
+          <p>|</p>
+          <a href="https://github.com/tomive01888" target="_null"> github </a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./js/main.mjs" type="module"></script>
+</html>

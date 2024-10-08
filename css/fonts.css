@@ -1,0 +1,62 @@
+/*
+
+.new-amsterdam-regular {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.ubuntu-condensed-regular {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+*/
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-wrap: pretty;
+
+}
+
+h1 {
+    font-size: clamp(3rem, 5vw + 2rem, 5.25rem);
+    float: right;
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw + 2rem, 2.5rem);
+
+}
+
+h3 {
+    font-size: clamp(1.65rem, 5vw + 2rem, 1.85rem);
+
+}
+
+h4 {
+    font-size: clamp(1.45rem, 5vw + 2rem, 1.65rem);
+
+}
+
+p,
+li,
+a {
+
+    font-family: "Ubuntu Condensed",
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    text-wrap: pretty;
+}
