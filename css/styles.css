@@ -47,6 +47,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    padding: 0 1rem;
 }
 
 nav .nav-links {
@@ -111,14 +112,17 @@ main {
 }
 
 #hero .job {
-    width: 100%;
+    width: fit-content;
     font-size: 26px;
     float: left;
     align-self: flex-start;
     display: flex;
     gap: 5px;
 
+    @media (max-width: 426px) {
+        font-size: 21px;
 
+    }
 }
 
 .yellow-underline-container {
@@ -488,14 +492,15 @@ main {
     transform: scale(80%);
 }
 
-
-
-
-
 #loading {
-    font-size: 24px;
+    font-size: 26px;
     font-family: "Ubuntu Condensed", sans-serif;
     color: #858585;
+
+    @media (max-width: 426px) {
+        font-size: 21px;
+
+    }
 }
 
 #dots {
