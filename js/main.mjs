@@ -49,7 +49,7 @@ const progressTextElement = document.getElementById("progress-text");
 let textToDisplay = "...in development";
 let currentText = "";
 
-function animateLoading() {
+async function animateLoading() {
   progressTextElement.textContent = "";
   currentText = "";
   progressTextElement.classList.remove("typing");
@@ -72,7 +72,7 @@ function animateLoading() {
 
   setTimeout(() => {
     typeText();
-  }, 0);
+  }, 2000);
 
   setTimeout(() => {
     animateLoading();

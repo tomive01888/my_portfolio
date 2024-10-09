@@ -36,6 +36,7 @@ header {
 
 .nav-brand {
     font-family: "Ubuntu Condensed", sans-serif;
+    border: 2px dashed black;
 }
 
 nav {
@@ -73,7 +74,7 @@ nav .nav-links {
     height: 2px;
     background-color: #FFFF00;
     position: absolute;
-    bottom: 0px;
+    bottom: -2px;
     transition: width 300ms ease;
 
 }
@@ -84,7 +85,7 @@ nav .nav-links {
 
 }
 
-/*___________________________________________________________ */
+/*____________________________________________________ hero section */
 main {
     height: 96vh;
     display: flex;
@@ -199,7 +200,6 @@ main {
     background-blend-mode: screen;
     opacity: 0.2;
 
-
 }
 
 .overlay-effect {
@@ -247,10 +247,6 @@ main {
     width: 100%;
     max-width: 1200px;
     height: auto;
-}
-
-#website-container .website-description {
-    height: 50px;
 }
 
 #website-container .imac-window {
@@ -310,6 +306,10 @@ main {
     text-align: center;
 }
 
+#website-container .website-description {
+    height: 50px;
+}
+
 #prev,
 #next {
     position: absolute;
@@ -338,6 +338,7 @@ main {
     transition: left 300ms ease;
     display: grid;
     place-items: center;
+
 }
 
 #prev:hover {
@@ -406,7 +407,7 @@ main {
     background-color: #171717;
 }
 
-#about {
+#grid-about {
     height: 100%;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
@@ -448,17 +449,43 @@ main {
     grid-row: 5;
     justify-self: flex-end;
     align-self: flex-start;
-    /* place-self: start; */
-    width: max-content;
     display: flex;
+    align-items: center;
 
 }
 
 .social a {
+    justify-self: flex-end;
     text-decoration: none;
-    aspect-ratio: 1/1;
     color: #FFFF00;
+    position: relative;
 
+}
+
+.social a::before {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #FFFF00;
+    position: absolute;
+    bottom: -2px;
+    transition: width 300ms ease;
+
+}
+
+.social a:hover::before {
+    width: 100%;
+    transition: width 300ms ease;
+
+}
+
+#grid-about .back-to-top {
+    grid-row: 6;
+    width: 30px;
+    background: transparent;
+    border: none;
+    place-self: center;
+    transform: scale(80%);
 }
 
 
@@ -484,7 +511,8 @@ main {
     transition: opacity 0.5s ease;
 }
 
-/* Typing effect */
+
+
 @keyframes typing {
     from {
         width: 0;
@@ -492,16 +520,6 @@ main {
 
     to {
         width: 100%;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-
-    100% {
-        border-color: black;
     }
 }
 

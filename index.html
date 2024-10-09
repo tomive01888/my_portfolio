@@ -44,7 +44,7 @@
       </section>
 
       <aside id="down" class="arrow-bob">
-        <img src="./assets/red-arrow.png" alt="red arrow" />
+        <img src="./assets/yellow-arrow.png" alt="yellow arrow pointing down" />
       </aside>
     </main>
 
@@ -53,40 +53,44 @@
       <section id="work" class="max-container">
         <h2>My work</h2>
 
-        <div id="website-container">
-          <img class="imac-window" src="./assets/iMac.png" alt="" />
+        <article id="website-container">
+          <img class="imac-window" src="./assets/iMac.png" alt="iMac display mockup" />
 
           <div class="button-container">
-            <button type="button" id="prev"><img src="./assets/red-arrow.png" alt="red arrow" /></button>
-            <button type="button" id="next"><img src="./assets/red-arrow.png" alt="red arrow" /></button>
+            <button type="button" id="prev" aria-label="Previous project">
+              <img src="./assets/yellow-arrow.png" alt="yellow arrow pointing left" />
+            </button>
+            <button type="button" id="next" aria-label="Next project">
+              <img src="./assets/yellow-arrow.png" alt="yellow arrow pointing right" />
+            </button>
           </div>
 
           <div id="website-image"></div>
 
-          <div class="website-info-wrapper">
-            <h3 class="website-name">title</h3>
+          <section class="website-info-wrapper">
+            <h3 class="website-name">Project Title</h3>
             <p class="website-visit">
-              <img src="./assets/linking.png" alt="linking icon" />
-              <a class="website-link" href="" target="_blank">here</a>
+              <img src="./assets/linking.png" alt="Linking icon" />
+              <a class="website-link" href="" target="_blank">Visit here</a>
             </p>
-            <p class="website-description">description</p>
-          </div>
-        </div>
+            <p class="website-description">Project description goes here.</p>
+          </section>
+        </article>
       </section>
     </div>
 
-    <section class="about-container">
-      <div id="about" class="max-container">
-        <div class="me">
+    <section class="about-container" id="about">
+      <div class="max-container" id="grid-about">
+        <article class="me">
           <h3>about me :</h3>
           <p>Hello there, I am a student at Noroff, currently taking class in Frontend-developer.</p>
           <p>
             Next to my studies I work at the airport in Oslo, Gardermoen in catering firm called Gate Gourmet as partime
             warehouse worker. Ranging from roomtemperature to ice cold environments all the way down to -30 degrees.
           </p>
-        </div>
+        </article>
 
-        <div class="skills">
+        <article class="skills">
           <h4>My skillset :</h4>
           <ul>
             <li>
@@ -95,13 +99,17 @@
             <li><span class="skill-side">|</span> CSS <span class="skill-level">Level: Intermediate</span></li>
             <li><span class="skill-side">|</span> HTML <span class="skill-level">Level: Intermediate</span></li>
           </ul>
-        </div>
+        </article>
 
-        <div class="social">
+        <article class="social">
+          <h4>Connect with Me:</h4>
           <a href="https://www.linkedin.com" target="_null"> linkedin </a>
           <p>|</p>
           <a href="https://github.com/tomive01888" target="_null"> github </a>
-        </div>
+        </article>
+        <a href="#hero" class="back-to-top">
+          <img src="./assets/yellow-arrow.png" alt="yellow arrow pointing up" />
+        </a>
       </div>
     </section>
   </body>
