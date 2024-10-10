@@ -319,6 +319,7 @@ main {
     border-radius: 5px;
     background-blend-mode: screen;
     box-shadow: 4px 4px 20px rgb(147, 147, 147);
+    position: relative;
 
 }
 
@@ -328,13 +329,13 @@ main {
     gap: var(--gap-small);
 }
 
-.website-info-wrapper .website-visit img {
+.website-info-wrapper img {
     width: 19px;
-    aspect-ratio: 1/1;
 
 }
 
-.website-info-wrapper .website-link {
+.website-info-wrapper .website-link,
+.website-info-wrapper .website-git-link {
     color: rgb(27, 84, 217);
     text-align: center;
 }
@@ -342,6 +343,15 @@ main {
 #website-container .website-description {
     height: 50px;
 }
+
+.github {}
+
+
+.github img {
+    width: 20px;
+    top: 100%;
+}
+
 
 #prev,
 #next {

@@ -26,6 +26,8 @@ async function updateWebsiteContent() {
   document.querySelector(".website-description").textContent = currentPage.description;
   document.querySelector(".website-link").href = currentPage.link;
   document.querySelector(".website-link").textContent = currentPage.link;
+  document.querySelector(".website-git-link").href = currentPage.link_2;
+  document.querySelector(".website-git-link").textContent = currentPage.title;
 }
 
 updateWebsiteContent();
