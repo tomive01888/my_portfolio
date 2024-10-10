@@ -1,21 +1,14 @@
 /*
-
 .new-amsterdam-regular {
   font-family: "New Amsterdam", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-
-
 .ubuntu-condensed-regular {
   font-family: "Ubuntu Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-
-
 */
 
 h1,
@@ -59,4 +52,16 @@ a {
     font-style: normal;
     font-size: 1.1rem;
     text-wrap: pretty;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+
+    /*
+
+    How to remove blue highlight effect on mobile:
+    https://stackoverflow.com/questions/45049873/how-to-remove-the-blue-highlight-of-button-on-mobile
+
+    */
 }

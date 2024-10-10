@@ -1,5 +1,13 @@
 @import url(./fonts.css);
 
+:root {
+    --primary-style-yellow: #FFFF00;
+    --primary-bg-color: #171717;
+    --font-family-main: "Ubuntu Condensed", sans-serif;
+    --gap-small: 5px;
+    --gap-medium: 10px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -10,11 +18,10 @@
 
 body {
     color: rgb(229, 229, 229);
+    font-family: var(--font-family-main);
 }
 
-main,
-section,
-article {
+main {
     padding: 0.5rem;
 
 }
@@ -24,19 +31,20 @@ article {
     max-width: 55rem;
 }
 
-/*___________________________________________________________ */
+/*__________________________________________HEADER Styling_____ */
 
 header {
     width: 100%;
     padding: 7px 0;
-    background-color: #171717;
+    background-color: var(--primary-bg-color);
     position: fixed;
     z-index: 9999;
 }
 
 .nav-brand {
-    font-family: "Ubuntu Condensed", sans-serif;
     border: 2px dashed black;
+    outline: 1px solid var(--primary-style-yellow);
+    outline-offset: 2px;
 }
 
 nav {
@@ -65,36 +73,18 @@ nav .nav-links {
 
 .nav-links li a {
     text-decoration: none;
-    color: #FFFF00;
+    color: var(--primary-style-yellow);
 
 }
 
-.nav-links li::before {
-    content: '';
-    width: 2px;
-    height: 2px;
-    background-color: #FFFF00;
-    position: absolute;
-    bottom: -2px;
-    transition: width 300ms ease;
-
-}
-
-.nav-links li:hover::before {
-    width: 100%;
-    transition: width 300ms ease;
-
-}
-
-/*____________________________________________________ hero section */
+/*________________________________________________HERO section____ */
 main {
     height: 96vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    background-color: #171717;
+    background-color: var(--primary-bg-color);
     position: relative;
 
 }
@@ -107,7 +97,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: var(--gap-medium);
     position: relative;
 }
 
@@ -117,19 +107,15 @@ main {
     float: left;
     align-self: flex-start;
     display: flex;
-    gap: 5px;
+    gap: var(--gap-small);
 
-    @media (max-width: 426px) {
-        font-size: 21px;
-
-    }
 }
 
 .yellow-underline-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--gap-medium);
     padding: 0;
 }
 
@@ -143,7 +129,7 @@ main {
 
 .yellow-underline {
     width: 100%;
-    border-bottom: 2px solid #FFFF00;
+    border-bottom: 2px solid var(--primary-style-yellow);
     text-align: right;
 
 }
@@ -180,7 +166,50 @@ main {
     }
 }
 
-/*=============================== my work section*/
+#loading {
+    font-size: 26px;
+    color: #858585;
+}
+
+#progress-text {
+    opacity: 0;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+#progress-text.typing {
+    opacity: 1;
+    border-right: 2px solid;
+    animation: none;
+    white-space: nowrap;
+}
+
+@media (max-width: 426px) {
+    #hero .job {
+        font-size: 20px;
+    }
+
+    #loading {
+        font-size: 20px;
+    }
+}
+
+
+/*______________________________________My-work section_____*/
+
 .mywork-container {
     display: grid;
     width: 100%;
@@ -188,6 +217,7 @@ main {
     background-color: rgb(215, 215, 215);
     position: relative;
     padding: 2rem 0;
+
 }
 
 .mywork-container::before {
@@ -201,8 +231,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: screen;
-    opacity: 0.2;
+    opacity: 0.03;
 
 }
 
@@ -247,10 +276,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: var(--gap-medium);
     width: 100%;
     max-width: 1200px;
     height: auto;
+
+
 }
 
 #website-container .imac-window {
@@ -286,7 +317,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 10px;
+    gap: var(--gap-medium);
     border-radius: 5px;
     background-blend-mode: screen;
     box-shadow: 4px 4px 20px rgb(147, 147, 147);
@@ -296,7 +327,7 @@ main {
 .website-info-wrapper .website-visit {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: var(--gap-small);
 }
 
 .website-info-wrapper .website-visit img {
@@ -323,10 +354,13 @@ main {
     cursor: pointer;
     font-size: 30px;
     background-color: transparent;
-    border: 2px solid #FFFF00;
+    border: 2px solid var(--primary-style-yellow);
+    ;
     border-radius: 50%;
     height: 35px;
     aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
 
 }
 
@@ -340,8 +374,6 @@ main {
     left: 0;
     transform: rotate(-90deg);
     transition: left 300ms ease;
-    display: grid;
-    place-items: center;
 
 }
 
@@ -353,16 +385,27 @@ main {
     right: 0;
     transform: rotate(90deg);
     transition: right 300ms ease;
-    display: grid;
-    place-items: center;
-
 }
 
 #next:hover {
     right: -3px;
 }
 
+
+@media (max-width: 769px) {
+    #prev:hover {
+        left: 0;
+    }
+
+    #next:hover {
+        right: 0;
+    }
+}
+
 @media (max-width: 426px) {
+    #work {
+        padding: 5px;
+    }
 
     #website-container .imac-window {
         width: 100%;
@@ -389,16 +432,14 @@ main {
         justify-content: center;
     }
 
-
     #prev,
     #next {
         position: relative;
         top: 0;
     }
-
 }
 
-/*=============================== about me section*/
+/*_______________________________________About me section_____*/
 
 .about-container {
     width: 100%;
@@ -407,9 +448,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    background-color: #171717;
+    background-color: var(--primary-bg-color);
 }
+
+@media (max-width: 426px) {
+    .about-container {
+        padding: 5px;
+    }
+}
+
 
 #grid-about {
     height: 100%;
@@ -426,7 +473,7 @@ main {
     max-width: 60ch;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--gap-medium);
 }
 
 .skills {
@@ -436,10 +483,12 @@ main {
 .skills ul li {
     list-style: none;
     margin-top: 8px;
+    padding-left: 0;
 }
 
 .skill-side {
-    color: #FFFF00;
+    color: var(--primary-style-yellow);
+    ;
     margin-right: 5px;
 }
 
@@ -449,7 +498,7 @@ main {
 
 .social {
     width: 100%;
-    gap: 10px;
+    gap: var(--gap-medium);
     grid-row: 5;
     justify-self: flex-end;
     align-self: flex-start;
@@ -461,25 +510,9 @@ main {
 .social a {
     justify-self: flex-end;
     text-decoration: none;
-    color: #FFFF00;
+    color: var(--primary-style-yellow);
+    ;
     position: relative;
-
-}
-
-.social a::before {
-    content: '';
-    width: 2px;
-    height: 2px;
-    background-color: #FFFF00;
-    position: absolute;
-    bottom: -2px;
-    transition: width 300ms ease;
-
-}
-
-.social a:hover::before {
-    width: 100%;
-    transition: width 300ms ease;
 
 }
 
@@ -490,47 +523,27 @@ main {
     border: none;
     place-self: center;
     transform: scale(80%);
+    margin-bottom: 10px;
 }
 
-#loading {
-    font-size: 26px;
-    font-family: "Ubuntu Condensed", sans-serif;
-    color: #858585;
-
-    @media (max-width: 426px) {
-        font-size: 21px;
-
-    }
-}
-
-#dots {
-    white-space: pre;
-}
-
-#progress-text {
-    opacity: 0;
-    display: inline-block;
-    white-space: nowrap;
-    border-right: 2px solid transparent;
-    overflow: hidden;
-    transition: opacity 0.5s ease;
+.back-to-top img {
+    transform: rotate(0deg);
 }
 
 
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
+/*__________________yellow underline animation for nav links____*/
+.stretch-line-animated::before {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: var(--primary-style-yellow);
+    ;
+    position: absolute;
+    bottom: -2px;
+    transition: width 300ms ease;
 }
 
-#progress-text.typing {
-    opacity: 1;
-    border-right: 2px solid;
-    animation: none;
-    white-space: nowrap;
+.stretch-line-animated:hover::before {
+    width: 100%;
 }
