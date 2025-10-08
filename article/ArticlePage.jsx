@@ -6,7 +6,7 @@ const ArticlePage = () => {
   const id = searchParams.get("id");
   const projectData = id ? projects[id] : undefined;
 
-  document.title = `${projectData.title} project by`;
+  document.title = `${projectData.title}`;
 
   if (!projectData) return <p>Project not found</p>;
 
@@ -33,8 +33,8 @@ const ArticlePage = () => {
 
   return (
     <>
-      <main className="w-full backdrop-saturate-0  backdrop-invert z-50 h-screen">
-        <div className="min-h-full mx-auto px-4 py-20 max-w-4xl bg-white ">
+      <main className={`w-full z-50 h-screen  bg-[url('/bg.png')] bg-fixed bg-cover bg-center`}>
+        <div className="min-h-full mx-auto px-4 py-20 max-w-4xl bg-white">
           {/* Go Back Home Link */}
           <a href="/" className="flex items-center gap-2 my-10 text-blue-500">
             <MoveLeft /> Return home

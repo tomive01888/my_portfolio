@@ -5,7 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/frog.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tom Andre Iversen's portfolio</title>
-    <link rel="preload" as="image" href="/bg.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,8 +12,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/index.css" />
+    <style>
+      body {
+        background: url("/bg.jpg") center/cover fixed no-repeat;
+        background-color: #000;
+      }
+    </style>
   </head>
-  <body>
+  <link rel="preload" as="image" href="/bg.jpg" />
+
+  <body class="bg-white">
     <div id="root" class="relative"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

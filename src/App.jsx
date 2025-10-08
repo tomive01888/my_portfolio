@@ -5,7 +5,7 @@ import TechContainer from "./components/TechContainer";
 function App() {
   return (
     <>
-      <main className="space-y-10 h-full backdrop-saturate-0 backdrop-invert z-50">
+      <main className="space-y-10 h-full z-50  bg-[url('/bg.png')] bg-fixed bg-cover bg-center">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-[50px_1fr] sm:gap-2">
           <div className="col-start-2">
             <section
