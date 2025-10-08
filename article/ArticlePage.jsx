@@ -3,9 +3,10 @@ import { projects } from "../data/projects";
 
 const ArticlePage = () => {
   const searchParams = new URLSearchParams(window.location.search);
-  const id = searchParams.get("id"); // e.g., "snapbid"
-
+  const id = searchParams.get("id");
   const projectData = id ? projects[id] : undefined;
+
+  document.title = `${projectData.title} of Tom Andre Iversen`;
 
   if (!projectData) return <p>Project not found</p>;
 
