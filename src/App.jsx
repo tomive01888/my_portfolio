@@ -32,15 +32,15 @@ function App() {
               >
                 <h3 className="font-condiment text-4xl text-center select-none">Skills</h3>
                 <TechContainer />
-                <h4 className="text-3xl font-rocksalt text-center wrap-pretty select-none">Get in touch!</h4>
-                <p className="text-blue-500 select-none">
+                <h4 className="text-3xl font-rocksalt text-center wrap-pretty select-none mt-20">Get in touch!</h4>
+                <p className="text-blue-500 select-none text-center">
                   <span className="text-black">Github:</span>{" "}
                   <a href="https://github.com/tomive01888" target="_blank" rel="noopener noreferrer">
                     Tom Andre Iversen
                   </a>
                 </p>
-                <p className="text-blue-500 select-none">
-                  <span className="text-black">Email:</span> andre.iversen@live.com
+                <p className="text-blue-500 text-center">
+                  <span className="text-black select-none ">Email:</span> andre.iversen@live.com
                 </p>
               </motion.section>
             </section>

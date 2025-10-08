@@ -136,7 +136,7 @@ export default function WorkShowcase() {
 
             <a
               href={articleLink}
-              className="text-blue-400 hover:text-blue-600 font-semibold mt-4 inline-block transition-colors float-end select-none"
+              className="text-blue-400 hover:text-blue-600 text-xl font-semibold mt-4 inline-block transition-colors float-end select-none"
             >
               Read Article →
             </a>
