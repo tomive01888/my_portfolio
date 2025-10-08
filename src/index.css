@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Condiment&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@theme {
+  --font-marvel: "Marvel", sans-serif;
+  --font-condiment: "Condiment", cursive;
+}
+
+@import "tailwindcss";
+
+@layer base {
+  body {
+    scroll-behavior: smooth;
+    background-image: url("https://images.unsplash.com/photo-1677784975587-8b17d7ba378f?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-condiment;
+  }
+
+  p,
+  a,
+  button {
+    @apply font-marvel;
+  }
+}

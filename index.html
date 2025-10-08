@@ -2,124 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tom Andre Iversen's Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>my_portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Ubuntu+Condensed&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto+Condensed:wght@400;700&family=New+Tegomin&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="/portfolio_icon.png" type="image/x-icon" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="nav-brand">Tom Andre Iversen</div>
-        <ul class="nav-links">
-          <li class="stretch-line-animated"><a href="#about">about</a></li>
-          <li class="stretch-line-animated"><a href="#work">my work</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <img src="" alt="" width="" height="" style="border-radius: 50%" />
-
-    <main>
-      <section id="hero" class="max-container">
-        <h1>Tom Andre Iversen</h1>
-        <p class="job">
-          Frontend-developer
-          <span id="loading">
-            <span id="progress-text"></span>
-          </span>
-        </p>
-
-        <section class="yellow-underline-container">
-          <div class="yellow-underline"></div>
-          <div class="yellow-underline"></div>
-          <div class="yellow-underline"></div>
-          <div class="yellow-underline"><p>gamer</p></div>
-          <div class="yellow-underline"><p>weird person</p></div>
-          <div class="yellow-underline"><p>frog lover</p></div>
-        </section>
-      </section>
-
-      <aside id="down" class="arrow-bob">
-        <img src="./assets/yellow-arrow.png" alt="yellow arrow pointing down" />
-      </aside>
-    </main>
-
-    <div class="mywork-container">
-      <div class="overlay-effect"></div>
-      <section id="work" class="max-container">
-        <h2>My work</h2>
-
-        <article id="website-container">
-          <img class="imac-window" src="./assets/iMac.png" alt="iMac display mockup" />
-
-          <div class="button-container">
-            <button type="button" id="prev" aria-label="Previous project">
-              <img src="./assets/yellow-arrow.png" alt="yellow arrow pointing left" />
-            </button>
-            <button type="button" id="next" aria-label="Next project">
-              <img src="./assets/yellow-arrow.png" alt="yellow arrow pointing right" />
-            </button>
-          </div>
-
-          <div id="website-image"></div>
-
-          <section class="website-info-wrapper">
-            <h3 class="website-name">Project Title</h3>
-            <p class="website-visit">
-              <img src="./assets/linking.png" alt="Linking icon" /> Visit the live page:
-
-              <a class="website-link" href="" target="_blank">Visit here</a>
-            </p>
-            <p class="website-visit github">
-              <img src="./assets/code_icon.png" alt="code icon in yellow" />
-              See it on Github: <a class="website-git-link" href="" target="_blank"></a>
-            </p>
-            <p class="website-description">Project description goes here.</p>
-          </section>
-        </article>
-      </section>
-    </div>
-
-    <section class="about-container" id="about">
-      <div class="max-container" id="grid-about">
-        <article class="me">
-          <h3>about me :</h3>
-          <p>Hello there, I am a student at Noroff, currently taking class in Frontend-developer.</p>
-          <p>
-            Next to my studies I work at the airport in Oslo, Gardermoen in catering firm called Gate Gourmet as partime
-            warehouse worker. Ranging from roomtemperature to ice cold environments all the way down to -30 degrees.
-          </p>
-        </article>
-
-        <article class="skills">
-          <h4>My skillset :</h4>
-          <ul>
-            <li>
-              <span class="skill-side">|</span> Javascript <span class="skill-level">Level: Low-intermediate</span>
-            </li>
-            <li><span class="skill-side">|</span> CSS <span class="skill-level">Level: Intermediate</span></li>
-            <li><span class="skill-side">|</span> HTML <span class="skill-level">Level: Intermediate</span></li>
-          </ul>
-        </article>
-
-        <article class="social">
-          <h4>Connect with Me:</h4>
-          <a class="stretch-line-animated" href="https://www.linkedin.com" target="_null"> linkedin </a>
-          <p>|</p>
-          <a class="stretch-line-animated" href="https://github.com/tomive01888" target="_null"> github </a>
-        </article>
-        <a href="#hero" class="back-to-top arrow-bob">
-          <img src="./assets/yellow-arrow.png" alt="yellow arrow pointing up" />
-        </a>
-      </div>
-    </section>
+    <div id="root" class="relative"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
-  <script src="./js/main.mjs" type="module"></script>
 </html>

@@ -1,0 +1,68 @@
+import { motion } from "framer-motion";
+import WorkShowcase from "./components/WorkSpace3";
+import TechContainer from "./components/TechContainer";
+
+function App() {
+  return (
+    <>
+      <main className="space-y-10 h-full backdrop-saturate-0 backdrop-invert z-50">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-[50px_1fr] sm:gap-2">
+          <div className="col-start-2">
+            <section id="top" className="bg-white flex flex-col w-full min-h-[90vh] justify-center mx-auto p-8">
+              <h1 className="text-8xl font-condiment text-teal-500">Tom André Iversen</h1>
+              <p className="w-full text-2xl mt-8">Junior Frontend-Developer</p>
+              <p className="w-full text-2xl">React</p>
+              <p className="w-full text-2xl">TailwindCSS</p>
+              <p className="w-full text-2xl">Vite</p>
+            </section>
+
+            <section id="work" className="min-h-[80vh] scroll-mt-24 bg-white">
+              <WorkShowcase />
+            </section>
+
+            <section
+              id="skill"
+              className="space-y-8 py-20 flex flex-col justify-center items-center min-h-[80vh] bg-white saturate-100"
+            >
+              <motion.section
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="mx-auto space-y-6 px-4"
+              >
+                <h3 className="font-condiment text-4xl text-center select-none">Skills</h3>
+                <TechContainer />
+                <h4 className="text-3xl font-rocksalt text-center wrap-pretty select-none">Get in touch!</h4>
+                <p className="text-blue-500 select-none">
+                  <span className="text-black">Github:</span>{" "}
+                  <a href="https://github.com/tomive01888" target="_blank" rel="noopener noreferrer">
+                    Tom Andre Iversen
+                  </a>
+                </p>
+                <p className="text-blue-500 select-none">
+                  <span className="text-black">Email:</span> andre.iversen@live.com
+                </p>
+              </motion.section>
+            </section>
+          </div>
+          <aside className="col-start-1 row-start-1 fixed bottom-6 left-1/2 -translate-x-1/2 sm:-translate-0 sm:left-0 w-full sm:w-fit sm:sticky mt-20 h-fit sm:top-1/2 bg-white  p-3 drop-shadow-sm drop-shadow-black/20 rounded-full">
+            <div className="flex flex-row sm:flex-col items-center justify-center gap-3 h-fit w-full sm:w-fit sticky top-0">
+              <a href="#top" className="select-none text-teal-500 font-bold">
+                Me
+              </a>
+              <a href="#work" className="select-none text-teal-500 font-bold">
+                Work
+              </a>
+              <a href="#skill" className="select-none text-teal-500 font-bold">
+                Skill
+              </a>
+            </div>
+          </aside>
+        </div>
+      </main>
+      <div className="absolute top-0 left-0 bottom-0 right-0 bg-black/90 -z-10" />
+    </>
+  );
+}
+
+export default App;
