@@ -1,5 +1,6 @@
-import { ClipboardCopy, MoveLeft, SquareArrowOutUpRight } from "lucide-react";
+import { MoveLeft, SquareArrowOutUpRight } from "lucide-react";
 import { projects } from "../data/projects";
+import CopyButton from "./components/CopyButton";
 
 const ArticlePage = () => {
   const searchParams = new URLSearchParams(window.location.search);
@@ -33,8 +34,8 @@ const ArticlePage = () => {
 
   return (
     <>
-      <main className={`w-full z-50 h-screen  bg-[url('/bg.png')] bg-fixed bg-cover bg-center`}>
-        <div className="min-h-full mx-auto px-4 py-20 max-w-4xl bg-white">
+      <main className={`w-full z-50 h-full bg-[url('/bg.png')] bg-fixed bg-cover bg-center`}>
+        <div className="min-h-full mx-auto px-8 py-20 max-w-4xl bg-white">
           {/* Go Back Home Link */}
           <a href="/" className="flex items-center gap-2 my-10 text-blue-500">
             <MoveLeft /> Return home
@@ -43,12 +44,7 @@ const ArticlePage = () => {
           {/* Title and Share/Copy Link */}
           <header className="flex flex-col md:flex-row md:justify-between items-start md:items-center mb-6">
             <h1 className="text-5xl font-bold text-condiment select-none">{projectData.title}</h1>
-            <button
-              onClick={() => navigator.clipboard.writeText(window.location.href)}
-              className="mt-2 md:mt-0 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 select-none cursor-pointer flex items-center gap-2"
-            >
-              <ClipboardCopy size={18} /> Copy URL
-            </button>
+            <CopyButton />
           </header>
 
           {/* Project Image with Caption */}
@@ -88,7 +84,7 @@ const ArticlePage = () => {
 
           {/* Main Content */}
           <section>
-            <p className="w-full max-w-[75ch] my-6 select-none">{projectData.long_description}</p>
+            <p className="w-full max-w-[75ch] my-12 select-none">{projectData.long_description}</p>
 
             {projectData.tech && projectData.tech.length > 0 && (
               <>
