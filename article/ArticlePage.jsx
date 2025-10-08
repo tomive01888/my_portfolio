@@ -6,7 +6,7 @@ const ArticlePage = () => {
   const id = searchParams.get("id");
   const projectData = id ? projects[id] : undefined;
 
-  document.title = `${projectData.title} of Tom Andre Iversen`;
+  document.title = `${projectData.title} project by`;
 
   if (!projectData) return <p>Project not found</p>;
 

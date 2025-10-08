@@ -46,14 +46,23 @@ function App() {
             </section>
           </div>
           <aside className="col-start-1 row-start-1 fixed bottom-6 left-1/2 -translate-x-1/2 sm:-translate-0 sm:left-0 w-full sm:w-fit sm:sticky mt-20 h-fit sm:top-1/2 bg-white  p-3 drop-shadow-sm drop-shadow-black/20 rounded-full">
-            <div className="flex flex-row sm:flex-col items-center justify-center gap-3 h-fit w-full sm:w-fit sticky top-0">
-              <a href="#top" className="select-none text-teal-500 font-bold">
+            <div className="flex flex-row sm:flex-col items-center justify-center gap-6 h-fit w-full sm:w-fit sticky top-0">
+              <a
+                href="#top"
+                className="select-none text-teal-500 font-bold rounded-full w-10 h-10 bg-gray-50 hover:bg-neutral-100 p-1 shadow grid place-items-center"
+              >
                 Me
               </a>
-              <a href="#work" className="select-none text-teal-500 font-bold">
+              <a
+                href="#work"
+                className="select-none text-teal-500 font-bold rounded-full w-10 h-10 bg-gray-50 hover:bg-neutral-100 p-1 shadow grid place-items-center"
+              >
                 Work
               </a>
-              <a href="#skill" className="select-none text-teal-500 font-bold">
+              <a
+                href="#skill"
+                className="select-none text-teal-500 font-bold rounded-full w-10 h-10 bg-gray-50 hover:bg-neutral-100 p-1 shadow grid place-items-center"
+              >
                 Skill
               </a>
             </div>
