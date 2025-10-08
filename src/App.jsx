@@ -8,12 +8,27 @@ function App() {
       <main className="space-y-10 h-full backdrop-saturate-0 backdrop-invert z-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-[50px_1fr] sm:gap-2">
           <div className="col-start-2">
-            <section id="top" className="bg-white flex flex-col w-full min-h-[90vh] justify-center mx-auto p-8">
+            <section
+              id="top"
+              className="bg-white flex flex-col items-start justify-center w-full min-h-[97vh] mx-auto p-8"
+            >
               <h1 className="text-8xl font-condiment text-teal-500">Tom André Iversen</h1>
-              <p className="w-full text-2xl mt-8">Junior Frontend-Developer</p>
-              <p className="w-full text-2xl">React</p>
-              <p className="w-full text-2xl">TailwindCSS</p>
-              <p className="w-full text-2xl">Vite</p>
+              <p className="italic font-extralight">Based in Oslo</p>
+              <div className="flex justify-between w-full mt-8">
+                <p className="w-full max-w-[70ch] text-start text-lg">
+                  I'm a junior web developer who enjoys turning ideas into interactive, responsive websites. My studies
+                  introduced me to the fundamentals of front-end development, and I've since focused on technologies
+                  like React, TypeScript, and TailwindCSS. I'm always looking for opportunities to learn, collaborate,
+                  and grow as a developer.
+                </p>
+                <div>
+                  <p className="w-full text-2xl">Junior Frontend-Developer</p>
+                  <p className="w-full text-2xl">React</p>
+                  <p className="w-full text-2xl">TailwindCSS</p>
+                  <p className="w-full text-2xl">Vite</p>
+                  <p className="w-full text-2xl">TypeScript</p>
+                </div>
+              </div>
             </section>
 
             <section id="work" className="min-h-[80vh] scroll-mt-24 bg-white">

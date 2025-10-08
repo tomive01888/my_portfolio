@@ -51,7 +51,7 @@ export const projects = {
       "The platform encourages global community engagement with a secure registration system and dynamic content updates. " +
       "Figma was used to design a mobile-friendly, clean interface, ensuring a seamless and enjoyable user experience. " +
       "REST API integrations handle backend interactions for smooth content management.",
-    tech: ["React", "JavaScript", "TailwindCSS", "Vite", "REST API", "Figma for design"],
+    tech: ["JavaScript", "TailwindCSS", "Vite", "REST API", "Figma for design"],
     link: "https://thedevsquare.netlify.app/?page=1",
     repo: "https://github.com/tomive01888/DevSquare-JS2",
   },
