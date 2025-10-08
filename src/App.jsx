@@ -12,9 +12,9 @@ function App() {
               id="top"
               className="bg-white flex flex-col items-start justify-center w-full min-h-[97vh] mx-auto p-8"
             >
-              <h1 className="text-8xl font-condiment text-teal-500">Tom André Iversen</h1>
-              <p className="italic font-extralight">Based in Oslo</p>
-              <div className="flex justify-between w-full mt-8">
+              <h1 className="text-8xl font-condiment text-teal-500 ml-10">Tom André Iversen</h1>
+              <p className="italic font-extralight ml-10">Based in Oslo</p>
+              <div className="flex flex-col lg:flex-row justify-evenly gap-8 w-full mt-8">
                 <p className="w-full max-w-[70ch] text-start text-lg">
                   I'm a junior web developer who enjoys turning ideas into interactive, responsive websites. My studies
                   introduced me to the fundamentals of front-end development, and I've since focused on technologies
