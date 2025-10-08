@@ -13,20 +13,21 @@ const ArticlePage = () => {
 
   const getBadgeUrl = (tech) => {
     const map = {
-      HTML: "https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white",
-      CSS: "https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+      HTML: "https://img.shields.io/badge/HTML-848484?style=for-the-badge&logo=html5&logoColor=white",
+      CSS: "https://img.shields.io/badge/CSS-264DE4?style=for-the-badge&logo=css3&logoColor=white",
       JavaScript: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
-      TypeScript: "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white",
+      TypeScript: "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white",
       React: "https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black",
-      Vite: "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white",
+      Vite: "https://img.shields.io/badge/Vite-B855DF?style=for-the-badge&logo=vite&logoColor=FFFFFF",
+
       "Tailwind CSS":
-        "https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white",
+        "https://img.shields.io/badge/Tailwind_CSS-0EA5E9?style=for-the-badge&logo=tailwind-css&logoColor=white",
       TailwindCSS:
-        "https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white",
-      "REST API": "https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=postman&logoColor=white",
+        "https://img.shields.io/badge/TailwindCSS-0EA5E9?style=for-the-badge&logo=tailwind-css&logoColor=white",
+      "REST API": "https://img.shields.io/badge/REST_API-E67E22?style=for-the-badge&logo=postman&logoColor=white",
       "Figma for design":
-        "https://img.shields.io/badge/Figma_for_design-F24E1E?style=for-the-badge&logo=figma&logoColor=white",
-      Figma: "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white",
+        "https://img.shields.io/badge/Figma_for_design-FF3366?style=for-the-badge&logo=figma&logoColor=white",
+      Figma: "https://img.shields.io/badge/Figma-FF3366?style=for-the-badge&logo=figma&logoColor=white",
     };
 
     return map[tech] || `https://img.shields.io/badge/${encodeURIComponent(tech)}-gray?style=for-the-badge`;
@@ -94,7 +95,7 @@ const ArticlePage = () => {
                     const badgeUrl = getBadgeUrl(tech);
                     return (
                       <li key={tech}>
-                        <img src={badgeUrl} alt={tech + " badge"} className="h-8 select-none" />
+                        <img src={badgeUrl} alt={tech + " badge"} className="h-8 select-none rounded" />
                       </li>
                     );
                   })}

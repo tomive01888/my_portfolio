@@ -14,7 +14,7 @@ export const projects = {
       "SnapBid integrates with the Noroff Auction House REST API for efficient auction management. " +
       "Designed with mobile-first responsiveness and a clean interface, SnapBid makes buying and selling items simple and enjoyable. " +
       "Figma was used for the design process, ensuring a polished, user-friendly experience.",
-    tech: ["React", "JavaScript", "TailwindCSS", "Vite", "REST API", "Figma for design"],
+    tech: ["HTML", "JavaScript", "TailwindCSS", "Vite", "REST API", "Figma for design"],
     link: "https://snap-bid.netlify.app/",
     repo: "https://github.com/tomive01888/SnapBid_noroff-sp2",
   },
@@ -51,7 +51,7 @@ export const projects = {
       "The platform encourages global community engagement with a secure registration system and dynamic content updates. " +
       "Figma was used to design a mobile-friendly, clean interface, ensuring a seamless and enjoyable user experience. " +
       "REST API integrations handle backend interactions for smooth content management.",
-    tech: ["JavaScript", "TailwindCSS", "Vite", "REST API", "Figma for design"],
+    tech: ["HTML", "JavaScript", "TailwindCSS", "Vite", "REST API", "Figma for design"],
     link: "https://thedevsquare.netlify.app/?page=1",
     repo: "https://github.com/tomive01888/DevSquare-JS2",
   },
