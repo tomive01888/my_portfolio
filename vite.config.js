@@ -9,7 +9,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-
   build: {
     rollupOptions: {
       input: {
@@ -17,5 +16,8 @@ export default defineConfig({
         article: resolve(__dirname, "article/index.html"),
       },
     },
+  },
+  server: {
+    host: true,
   },
 });

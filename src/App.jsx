@@ -31,7 +31,7 @@ function App() {
               </div>
             </section>
 
-            <section id="work" className="min-h-[80vh] scroll-mt-24 bg-white">
+            <section id="work" className="min-h-[80vh] bg-white">
               <WorkShowcase />
             </section>
 

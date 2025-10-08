@@ -101,7 +101,7 @@ export default function WorkShowcase() {
           {currentProject.title}
         </motion.h3>
 
-        <div className="relative w-auto max-w-5xl mx-auto">
+        <div className="relative w-auto max-w-4xl mx-auto">
           <div className="w-full h-full aspect-video max-w-5xl mx-auto relative overflow-hidden bg-black">
             <AnimatePresence initial={false} custom={direction}>
               <ProjectImage key={currentProjectKey} project={currentProject} direction={direction} />
@@ -123,7 +123,7 @@ export default function WorkShowcase() {
           </button>
         </div>
       </motion.div>
-      <div className="w-full max-w-xl mx-auto my-5">
+      <div className="w-full max-w-2xl mx-auto my-5">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={currentProjectKey + "-details"}
@@ -132,11 +132,11 @@ export default function WorkShowcase() {
             animate="animate"
             exit="exit"
           >
-            <p className="text-lg text-start h-28 select-none">{currentProject.description}</p>
+            <p className="text-lg text-start select-none">{currentProject.description}</p>
 
             <a
               href={articleLink}
-              className="text-blue-400 hover:text-blue-600 text-xl font-semibold mt-4 inline-block transition-colors float-end select-none"
+              className="text-blue-400 hover:text-blue-600 text-xl font-semibold mt-8 inline-block transition-colors float-end select-none"
             >
               Read Article →
             </a>
