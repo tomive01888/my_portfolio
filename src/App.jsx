@@ -70,21 +70,27 @@ function App() {
               {" "}
               <a
                 href="#top"
-                className="select-none text-teal-500 font-bold rounded-full w-10 h-10 bg-gray-50 hover:bg-neutral-100 p-1 shadow grid place-items-center"
+                className="select-none text-xl text-white font-condiment font-bold rounded-full w-10 h-10 bg-teal-400 hover:bg-teal-500 p-1 shadow relative drop-shadow-sm drop-shadow-teal-900/80"
               >
-                Me
+                <span className="absolute left-1/2 top-1/2 -translate-1/2 mt-1 text-shadow-md text-shadow-black/40 hover:scale-140 transition-all duration-300">
+                  Me
+                </span>
               </a>
               <a
                 href="#work"
-                className="select-none text-teal-500 font-bold rounded-full w-10 h-10 bg-gray-50 hover:bg-neutral-100 p-1 shadow grid place-items-center"
+                className="select-none text-xl text-white font-condiment font-bold rounded-full w-10 h-10 bg-teal-400 hover:bg-teal-500 p-1 shadow relative drop-shadow-sm drop-shadow-teal-900/80"
               >
-                Work
+                <span className="absolute left-1/2 top-1/2 -translate-1/2 mt-1 text-shadow-md text-shadow-black/40 hover:scale-140 transition-all duration-300">
+                  Work
+                </span>
               </a>
               <a
                 href="#skill"
-                className="select-none text-teal-500 font-bold rounded-full w-10 h-10 bg-gray-50 hover:bg-neutral-100 p-1 shadow grid place-items-center"
+                className="select-none text-xl text-white font-condiment font-bold rounded-full w-10 h-10 bg-teal-400 hover:bg-teal-500 p-1 shadow relative drop-shadow-sm drop-shadow-teal-900/80"
               >
-                Skill
+                <span className="absolute left-1/2 top-1/2 -translate-1/2 mt-1 text-shadow-md text-shadow-black/40 hover:scale-140 transition-all duration-300">
+                  Skill
+                </span>
               </a>
             </div>
           </aside>
